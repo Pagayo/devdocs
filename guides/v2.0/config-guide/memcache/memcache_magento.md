@@ -27,7 +27,7 @@ To configure Magento to use memcache:
             'session' =>
                array (
                   'save' => 'memcache',
-                  'save_path' => 'tcp://<memcache ip or host>:<memcache port>'
+                  'save_path' => 'tcp://<memcache ip or host>:<memcache port>',
             ),
 
     *   PHP `memcached` extension
@@ -35,7 +35,7 @@ To configure Magento to use memcache:
             'session' =>
                array (
                   'save' => 'memcached’,
-                  'save_path' => '<memcache ip or host>:<memcache port>'
+                  'save_path' => '<memcache ip or host>:<memcache port>',
             ),
             
     Both memcache and memcached have optional startup parameters that are beyond the scope of this guide. You can find more information about them in the <a href="http://php.net/manual/en/memcache.ini.php#ini.memcache.save-path" target="_blank">memcache</a> or <a href="http://php.net/manual/en/memcached.sessions.php" target="_blank">memcached</a> documentation, source code, and changelogs.
